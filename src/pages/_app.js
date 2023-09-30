@@ -19,7 +19,7 @@ export default function App({Component, pageProps}) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${font.variable} font-mont bg-light w-full min-h-screen`}>
+            <main className={`${font.variable} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
                 <NavBar />
                 <Component {...pageProps} />
             </main>

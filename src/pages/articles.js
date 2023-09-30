@@ -45,6 +45,10 @@ const MovingImage = ({title, img, link}) => {
                 src={img}
                 alt={title}
                 className="z-10 w-96 h-auto hidden absolute rounded-lg"
+                priority={true}
+                sizes="(max-width: 768px) 100vw,
+                                (max-width: 1200px) 50vw,
+                                33vw"
             />
         </Link>
     )
@@ -52,7 +56,7 @@ const MovingImage = ({title, img, link}) => {
 
 const FeaturedArticle = ({img, title, time, summary, link}) => {
     return (
-        <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl shadow-2xl">
+        <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl shadow-2xl dark:text-light dark:border-light dark:bg-dark">
             <Link
                 href={link}
                 target="_blank"
@@ -64,6 +68,10 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
                     className="w-full h-auto"
                     whileHover={{scale: 1.05}}
                     transition={{duration: 0.2}}
+                    priority={true}
+                    sizes="(max-width: 768px) 100vw,
+                                (max-width: 1200px) 50vw,
+                                33vw"
                 />
             </Link>
             <Link href={link} target="_blank">
@@ -72,7 +80,9 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
                 </h2>
             </Link>
             <p className="text-sm mb-2">{summary}</p>
-            <span className="text-primary font-semibold">{time}</span>
+            <span className="text-primary font-semibold dark:text-primaryDark">
+                {time}
+            </span>
         </li>
     )
 }
@@ -83,10 +93,12 @@ const Article = ({img, title, date, link}) => {
             initial={{y: 200}}
             whileInView={{y: 0, transition: {duration: 0.5, ease: "easeInOut"}}}
             viewport={{once: true}}
-            className="w-full p-4 py-6 my-4 rounded-2xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark shadow-xl"
+            className="w-full p-4 py-6 my-4 rounded-2xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark shadow-xl dark:bg-dark dark:text-light dark:border-light"
         >
             <MovingImage img={img} link={link} title={title} />
-            <span className="text-primary font-semibold pl-4">{date}</span>
+            <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+                {date}
+            </span>
         </motion.li>
     )
 }
@@ -101,7 +113,7 @@ const articles = () => {
                     content="Sammy Shehter articles page"
                 />
             </Head>
-            <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+            <main className="w-full flex flex-col items-center justify-center overflow-hidden dark:text-light">
                 <Layout className="pt-14">
                     <AnimatedText
                         text="Words Can Change The World!"
