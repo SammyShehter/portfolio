@@ -44,7 +44,7 @@ const MovingImage = ({title, img, link}) => {
                 ref={ref}
                 src={img}
                 alt={title}
-                className="z-10 w-96 h-auto hidden absolute rounded-lg"
+                className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
                 priority={true}
                 sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw,
@@ -75,7 +75,7 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
                 />
             </Link>
             <Link href={link} target="_blank">
-                <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">
+                <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">
                     {title}
                 </h2>
             </Link>
@@ -93,10 +93,10 @@ const Article = ({img, title, date, link}) => {
             initial={{y: 200}}
             whileInView={{y: 0, transition: {duration: 0.5, ease: "easeInOut"}}}
             viewport={{once: true}}
-            className="w-full p-4 py-6 my-4 rounded-2xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark shadow-xl dark:bg-dark dark:text-light dark:border-light"
+            className="w-full p-4 py-6 my-4 rounded-2xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark shadow-xl dark:bg-dark dark:text-light dark:border-light sm:flex-col"
         >
             <MovingImage img={img} link={link} title={title} />
-            <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+            <span className="text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm">
                 {date}
             </span>
         </motion.li>
@@ -117,9 +117,9 @@ const articles = () => {
                 <Layout className="pt-14">
                     <AnimatedText
                         text="Words Can Change The World!"
-                        className="mb-16"
+                        className="mb-16 lg:text-7xl sm:mb-8 sm:text-6xl xs:text-4xl"
                     />
-                    <ul className="grid grid-cols-2 gap-16">
+                    <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
                         <FeaturedArticle
                             img={article1}
                             link="/"
@@ -143,37 +143,37 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
                     </h2>
                     <ul>
                         <Article
-                            date="Sep 27"
+                            date="Sep 27, 2023"
                             img={article1}
                             link="/"
                             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
                         />
                         <Article
-                            date="Sep 27"
+                            date="Sep 27, 2023"
                             img={article1}
                             link="/"
                             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
                         />
                         <Article
-                            date="Sep 27"
+                            date="Sep 27, 2023"
                             img={article1}
                             link="/"
                             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
                         />
                         <Article
-                            date="Sep 27"
+                            date="Sep 27, 2023"
                             img={article1}
                             link="/"
                             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
                         />
                         <Article
-                            date="Sep 27"
+                            date="Sep 27, 2023"
                             img={article1}
                             link="/"
                             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
                         />
                         <Article
-                            date="Sep 27"
+                            date="Sep 27, 2023"
                             img={article1}
                             link="/"
                             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
