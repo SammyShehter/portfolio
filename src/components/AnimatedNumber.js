@@ -25,7 +25,7 @@ const AnimatedNumber = ({value, className = "", specialCharacter = ""}) => {
                 )}${specialCharacter}`
             }
         })
-    }, [springValue, value])
+    }, [springValue, value, specialCharacter])
 
     return <span ref={numRef} className={className}></span>
 }

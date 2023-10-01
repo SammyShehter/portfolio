@@ -4,9 +4,10 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import React, {useRef} from "react"
-import article1 from "../../public/images/articles/create modal component in react using react portals.png"
-import article2 from "../../public/images/articles/pagination component in reactjs.jpg"
+import article1 from "../../public/images/articles/2.jpg"
+import article2 from "../../public/images/articles/1.jpg"
 import {motion, useMotionValue} from "framer-motion"
+import TransitionEffect from "@/components/TransitionEffect"
 
 const FramerImage = motion(Image)
 
@@ -113,6 +114,7 @@ const articles = () => {
                     content="Sammy Shehter articles page"
                 />
             </Head>
+            <TransitionEffect />
             <main className="w-full flex flex-col items-center justify-center overflow-hidden dark:text-light">
                 <Layout className="pt-14">
                     <AnimatedText

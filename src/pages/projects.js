@@ -5,8 +5,9 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import projectOne from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import projectOne from "../../public/images/projects/1.jpg"
 import {motion} from "framer-motion"
+import TransitionEffect from "@/components/TransitionEffect"
 
 const FramerImage = motion(Image)
 
@@ -125,6 +126,7 @@ const projects = () => {
                     content="Sammy Shehter projects page"
                 />
             </Head>
+            <TransitionEffect />
             <main className="w-full flex flex-col justify-center items-center">
                 <Layout className="pt-16">
                     <AnimatedText
