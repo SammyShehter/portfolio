@@ -45,18 +45,18 @@ export default function Home() {
                                 articles, showcasing my expertise in React.js
                                 and web development.
                             </p>
-                            <div className="flex items-center self-start mt-2 lg:self-center">
+                            <div className="flex items-center self-start mt-2 lg:self-center justify-start xl:justify-center w-full">
                                 <Link
                                     href="/dummy.pdf"
                                     target="_blank"
                                     download={true}
-                                    className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-transparent hover:border-dark hover:bg-light hover:text-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light lg:p-2 md:px-4 md:text-base"
+                                    className="flex items-center bg-dark text-light p-2.5 px-6 w-64 rounded-lg text-lg font-semibold border-2 border-solid border-transparent hover:border-dark hover:border-opacity-30 dark:hover:border-opacity-30 hover:bg-light hover:text-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light lg:p-2 md:px-4 md:text-base justify-center delay-100 transition-all"
                                 >
-                                    Resume <LinkArrow className="w-6 ml-1" />
+                                    Resume <LinkArrow className="ml-1" />
                                 </Link>
                                 <Link
                                     href="mailto:sammyshehter@gmail.com"
-                                    className="ml-5 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
+                                    className="flex items-center bg-dark text-light p-2.5 px-6 w-64 rounded-lg text-lg font-semibold border-2 border-solid border-transparent hover:border-dark hover:bg-light hover:border-opacity-30 dark:hover:border-opacity-30 hover:text-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light lg:p-2 md:px-4 md:text-base justify-center ml-8 md:ml-4 delay-100 transition-all"
                                 >
                                     Contact
                                 </Link>
