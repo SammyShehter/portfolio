@@ -20,7 +20,7 @@ export default function Home() {
             <TransitionEffect />
             <main className="flex items-center text-dark w-full min-h-screen md:min-h-min dark:text-light">
                 <Layout className="pt-0 md:pt-16 sm:py-8">
-                    <div className="flex items-center justify-between w-full lg:flex-col">
+                    <div className="flex items-center justify-between w-full lg:flex-col md:flex-col-reverse">
                         <div className="w-1/2 md:w-full">
                             <Image
                                 priority={true}
@@ -29,7 +29,7 @@ export default function Home() {
                                 50vw"
                                 src={profilePic}
                                 alt="Sammy Shehter"
-                                className="w-full h-auto lg:hidden md:inline-block md:w-full md:pb-4"
+                                className="w-full h-auto lg:hidden md:inline-block md:w-full"
                             />
                         </div>
                         <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">

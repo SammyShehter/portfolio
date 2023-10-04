@@ -91,6 +91,7 @@ const NavBar = () => {
                         className="ml-4"
                     />
                 </nav>
+                <Logo className="inline-block lg:hidden"/>
                 <nav className="flex justify-center items-center flex-wrap">
                     <motion.a
                         href="https://github.com/SammyShehter"
@@ -128,6 +129,7 @@ const NavBar = () => {
                     </button>
                 </nav>
             </div>
+            <Logo className="hidden lg:inline-block"/>
 
             {isOpen && (
                 <motion.div
@@ -197,9 +199,6 @@ const NavBar = () => {
                 </motion.div>
             )}
 
-            <div className="absolute left-[50%] xs:left-[30%] sm:left-[35%] md:left-[40%] lg:left-[80%] top-2 -translate-x-[-50%]">
-                <Logo />
-            </div>
         </header>
     )
 }
