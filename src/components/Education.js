@@ -7,7 +7,7 @@ const Details = ({type, time, place, info}) => {
     return (
         <li
             ref={ref}
-            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+            className="my-5 first:mt-0 last:mb-0 w-[70%] sm:w-[75%] xs:w-[75%] flex flex-col items-start justify-between"
         >
             <LiIcon reference={ref} />
             <motion.div
@@ -16,7 +16,9 @@ const Details = ({type, time, place, info}) => {
                 transition={{duration: 0.5, type: "spring"}}
                 viewport={{once: true}}
             >
-                <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}&nbsp;</h3>
+                <h3 className="capitalize font-bold text-2xl lg:text-xl sm:text-lg xs:text-base">
+                    {type}&nbsp;
+                </h3>
                 <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
                     {time} | {place}
                 </span>
@@ -33,37 +35,26 @@ const Education = () => {
         offset: ["start end", "center start"],
     })
     return (
-        <div ref={ref} className="my-64">
-            <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xl:mb-16 xl:mt-32">
+        <div ref={ref} className="">
+            <h2 className="font-bold text-6xl mt-32 w-full text-center md:text-5xl xl:mb-16 xl:mt-32 mb-16 lg:text-5xl sm:text-4xl xs:text-3xl sm:mb-8 sm:mt-16">
                 Education
             </h2>
 
             <div className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
                 <motion.div
                     style={{scaleY: scrollYProgress}}
-                    className="absolute left-9 top-0 w-[4px] bg-dark h-full origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
+                    className="absolute left-9 top-2 w-[4px] bg-dark h-full origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[19px] opacity-30"
                 />
-                <ul className="w-full flex flex-col items-center justify-between ml-4 xs:ml-2">
+                <ul className="w-full flex flex-col items-center justify-between last:pb-10">
                     <Details
-                        type="Bachelor Of Science In Computer Science"
-                        place="Massachusetts Institute Of Technology (MIT)"
+                        type="BA in Economics and Management"
+                        place="Ariel University"
                         time="2016-2020"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
                     />
                     <Details
-                        type="Bachelor Of Science In Computer Science"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        time="2016-2020"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
-                    />
-                    <Details
-                        type="Bachelor Of Science In Computer Science"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        time="2016-2020"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
+                        type="Diploma in PC Hardware and Software solutions"
+                        place="Sitrin Hi-Tech College"
+                        time="2011-2014"
                     />
                 </ul>
             </div>

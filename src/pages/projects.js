@@ -5,7 +5,7 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import projectOne from "../../public/images/projects/1.jpg"
+import muf from "../../public/images/projects/muf.jpeg"
 import {motion} from "framer-motion"
 import TransitionEffect from "@/components/TransitionEffect"
 
@@ -13,7 +13,7 @@ const FramerImage = motion(Image)
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
     return (
-        <article className="flex w-full items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-4 dark:border-light dark:bg-dark dark:text-light lg:flex-col lg:p-8 xs:rounded-2xl xs:p-4">
+        <article className="flex w-full items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-4 dark:border-light dark:bg-dark dark:text-light lg:flex-col lg:p-8 xs:rounded-2xl xs:p-4 border-opacity-30 dark:border-opacity-30">
             <Link
                 href={link}
                 target="_blank"
@@ -48,14 +48,14 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                 <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
                     {summary}
                 </p>
-                <div className="mt-2 flex items-center">
+                <div className="w-full mt-2 flex items-center justify-between">
                     <Link href={github} target="_blank" className="w-10">
                         <GithubIcon />
                     </Link>
                     <Link
                         href={github}
                         target="_blank"
-                        className="bg-dark ml-4 rounded-lg text-light p-2 px-6 text-lg font-semibold dark:text-dark dark:bg-light sm:px-4 sm:text-base"
+                        className="ml-4 sm:px-4 sm:text-base flex items-center bg-dark text-light p-2.5 px-6 w-64 rounded-lg text-lg font-semibold border-2 border-solid border-transparent hover:border-dark hover:border-opacity-30 dark:hover:border-opacity-30 hover:bg-light hover:text-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light lg:p-2 md:px-4 md:text-base justify-center delay-100 transition-all"
                     >
                         Visit The Project
                     </Link>
@@ -67,7 +67,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
 const Project = ({title, type, img, link, github}) => {
     return (
-        <article className="flex flex-col w-full items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 dark:border-light dark:text-light dark:bg-dark xs:p-4">
+        <article className="flex flex-col w-full items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 dark:border-light dark:text-light dark:bg-dark xs:p-4 border-opacity-30 dark:border-opacity-30">
             <Link
                 href={link}
                 target="_blank"
@@ -91,7 +91,7 @@ const Project = ({title, type, img, link, github}) => {
                     {type}
                 </span>
                 <Link
-                    href={link}
+                    href={github}
                     target="_blank"
                     className="hover:underline underline-offset-2"
                 >
@@ -103,7 +103,7 @@ const Project = ({title, type, img, link, github}) => {
                     <Link
                         href={github}
                         target="_blank"
-                        className="p-2 text-lg font-semibold hover:underline-offset-2 hover:underline"
+                        className="text-lg font-semibold hover:underline-offset-2 hover:underline"
                     >
                         Visit
                     </Link>
@@ -136,81 +136,60 @@ const projects = () => {
                     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-16 lg:gap-8 md:gap-6">
                         <div className="col-span-12">
                             <FeaturedProject
-                                github="/"
-                                img={projectOne}
-                                link="/"
+                                github="https://github.com/SammyShehter/muf-infograph"
+                                img={muf}
+                                link="http://116.202.21.186/"
                                 summary={`
-                                A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency.`}
-                                title="Crypto Screener Application"
+                                A dynamic tool designed for broadcasting the game Werewolf on platforms like Twitch. Supports 8 simultaneous games with real-time updates. Built with a NodeJS backend, React frontend, and an optimized image handling function. Features a comprehensive backoffice for game management, ensuring instant synchronization across all clients. Serves a mid-range audience of ~1500 viewers.`}
+                                title="Muf-Infograph"
                                 type="Featured Project"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                github="/"
-                                img={projectOne}
-                                link="/"
-                                summary={`
-                                A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency.`}
-                                title="Crypto Screener Application"
-                                type="Featured Project"
+                                type="Backend Project"
+                                title="Auth Service"
+                                img={muf}
+                                link="https://auth.sammyshehter.com/info"
+                                github="https://github.com/SammyShehter/auth-service"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                github="/"
-                                img={projectOne}
-                                link="/"
-                                summary={`
-                                A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency.`}
-                                title="Crypto Screener Application"
-                                type="Featured Project"
+                                type="CLI App"
+                                title="Images Combiner"
+                                img={muf}
+                                github="https://github.com/SammyShehter/combiner"
+                                link="https://github.com/SammyShehter/combiner"
                             />
                         </div>
 
                         <div className="col-span-12">
                             <FeaturedProject
-                                github="/"
-                                img={projectOne}
-                                link="/"
-                                summary={`
-                                A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency.`}
-                                title="Crypto Screener Application"
+                                github="https://github.com/SammyShehter/Nuvola/"
+                                img={muf}
+                                link="https://nuvola.sammyshehter.com"
+                                summary={`Blah blah blah.`}
+                                title="CMS App"
                                 type="Featured Project"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                github="/"
-                                img={projectOne}
-                                link="/"
-                                summary={`
-                                A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency.`}
-                                title="Crypto Screener Application"
-                                type="Featured Project"
+                                type="Backend Project"
+                                title="Auth Service"
+                                img={muf}
+                                link="https://auth.sammyshehter.com/info"
+                                github="https://github.com/SammyShehter/auth-service"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                github="/"
-                                img={projectOne}
-                                link="/"
-                                summary={`
-                                A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency.`}
-                                title="Crypto Screener Application"
-                                type="Featured Project"
+                                type="Backend Project"
+                                title="Auth Service"
+                                img={muf}
+                                link="https://auth.sammyshehter.com/info"
+                                github="https://github.com/SammyShehter/auth-service"
                             />
                         </div>
                     </div>
