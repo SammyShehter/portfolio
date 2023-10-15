@@ -32,12 +32,12 @@ const Skills = () => {
                 <Skill name="JavaScript" x="25vw" y="14vw" />
                 <Skill name="NodeJS" x="0vw" y="16vw" />
                 <Skill name="Kotlin" x="-25vw" y="-18vw" />
-                <Skill name="ReactJS" x="15vw" y="-20vw" />
+                <Skill name="ReactJS" x="15vw" y="-15vw" />
                 <Skill name="SQL" x="35vw" y="-10vw" />
                 <Skill name="Docker" x="20vw" y="0vw" />
-                <Skill name="NoSQL" x="0vw" y="-30vw" />
-                <Skill name="Firebase" x="-25vw" y="23vw" />
-                <Skill name="K8s" x="18vw" y="24vw" />
+                <Skill name="NoSQL" x="0vw" y="-4vw" />
+                <Skill name="Firebase" x="-25vw" y="15.5vw" />
+                <Skill name="K8s" x="18vw" y="8vw" />
             </div>
         </>
     )
