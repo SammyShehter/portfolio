@@ -5,7 +5,8 @@ import Image from "next/image"
 import Link from "next/link"
 import React, {useRef} from "react"
 import article1 from "../../public/images/articles/2.jpg"
-import article2 from "../../public/images/articles/1.jpg"
+import article2 from "../../public/images/articles/weakmap2.jpg"
+import article3 from "../../public/images/articles/weakmap3.jpg"
 import {motion, useMotionValue} from "framer-motion"
 import TransitionEffect from "@/components/TransitionEffect"
 
@@ -123,7 +124,7 @@ const articles = () => {
                     />
                     <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
                         <FeaturedArticle
-                            img={article1}
+                            img={article3}
                             link="/"
                             summary="Learn how to build a custom pagination component in ReactJS from scratch. 
 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."

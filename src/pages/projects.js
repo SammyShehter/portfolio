@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import muf from "../../public/images/projects/muf.jpeg"
+import auth from "../../public/images/projects/auth.jpg"
 import {motion} from "framer-motion"
 import TransitionEffect from "@/components/TransitionEffect"
 
@@ -130,7 +131,7 @@ const projects = () => {
             <main className="w-full flex flex-col justify-center items-center">
                 <Layout className="pt-16">
                     <AnimatedText
-                        text="Imagination Trumps Knowledge!"
+                        text="When imagination and knowledge work together!"
                         className="mb-16 lg:text-7xl sm:mb-8 sm:text-6xl xs:text-4xl"
                     />
                     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-16 lg:gap-8 md:gap-6">
@@ -149,7 +150,7 @@ const projects = () => {
                             <Project
                                 type="Backend Project"
                                 title="Auth Service"
-                                img={muf}
+                                img={auth}
                                 link="https://auth.sammyshehter.com/info"
                                 github="https://github.com/SammyShehter/auth-service"
                             />

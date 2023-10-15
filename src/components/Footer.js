@@ -4,7 +4,7 @@ import Logo from "./Logo"
 
 const Footer = () => {
     return (
-        <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:border-light dark:text-light sm:text-base bg-light dark:bg-dark border-opacity-30 dark:border-opacity-30">
+        <footer className="w-full font-medium text-lg dark:text-light sm:text-base bg-light dark:bg-dark">
             <Layout className="py-10 xl:py-9 lg:py-8 md:py-7 sm:py-6 xs:py-5 px-64 xl:px-48 flex items-center justify-between lg:flex-col">
                 <span>
                     {new Date().getFullYear()} &copy; All Rights Reserved.
