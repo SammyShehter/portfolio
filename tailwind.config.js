@@ -17,6 +17,10 @@ module.exports = {
                 "spin-slow": "spin 15s linear infinite",
             },
             backgroundImage: {
+                customBackgroundLight: 'linear-gradient(to right, #4e54c8, #8f94fb)',
+                reverseCustomBackgroundLight: 'linear-gradient(to left, #4e54c8, #8f94fb)',
+                reverseCustomBackgroundDark: 'linear-gradient(to left, #373B44, #4286f4)',
+                customBackgroundDark: 'linear-gradient(to right, #373B44, #4286f4)',
                 circularLight:
                     "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#edfafd 5px,#edfafd 100px)",
 

@@ -23,14 +23,14 @@ export default function App({Component, pageProps}) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main
-                className={`${font.variable} font-mont bg-light w-full dark:bg-dark`}
+                className={`${font.variable} font-mont bg-customBackgroundLight w-full dark:bg-customBackgroundDark`}
             >
                 <NavBar />
                 <AnimatePresence mode="wait">
                     <Component key={router.asPath} {...pageProps} />
                 </AnimatePresence>
-            </main>
             <Footer />
+            </main>
         </>
     )
 }
