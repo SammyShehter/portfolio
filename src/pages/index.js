@@ -42,7 +42,7 @@ export default function Home() {
                             </p>
                             <div className="flex items-center self-start mt-2 lg:self-center justify-start xl:justify-center w-full">
                                 <Link
-                                    href="/dummy.pdf"
+                                    href="/SammyShehterCV.pdf"
                                     target="_blank"
                                     download={true}
                                     className="flex items-center bg-dark text-light p-2.5 px-6 w-64 rounded-lg text-lg font-semibold border-2 border-solid border-transparent hover:border-dark hover:border-opacity-30 dark:hover:border-opacity-30 hover:bg-light hover:text-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light lg:p-2 md:px-4 md:text-base justify-center delay-100 transition-all"

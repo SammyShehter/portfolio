@@ -22,10 +22,10 @@ module.exports = {
                 reverseCustomBackgroundDark: 'linear-gradient(to left, #373B44, #4286f4)',
                 customBackgroundDark: 'linear-gradient(to right, #373B44, #4286f4)',
                 circularLight:
-                    "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#edfafd 5px,#edfafd 100px)",
+                    "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#edfafd00 5px,#edfafd00 100px)",
 
                 circularDark:
-                    "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#060a17 8px,#060a17 100px)",
+                    "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#060a1700 8px,#060a1700 100px)",
 
                 circularLightLg:
                     "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#edfafd 5px,#edfafd 80px)",

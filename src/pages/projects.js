@@ -104,7 +104,7 @@ const Project = ({title, type, img, link, github}) => {
                     <Link
                         href={github}
                         target="_blank"
-                        className="text-lg font-semibold hover:underline-offset-2 hover:underline"
+                        className="text-lg font-semibold hover:text-lime-200 underline underline-offset-2"
                     >
                         Visit
                     </Link>
